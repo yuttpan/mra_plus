@@ -50,4 +50,11 @@ $scope.data = {} ;
 })
 
 
+.controller('mraAddCtrl', function($scope, $state,DataService,$ionicPopup,$window,$localStorage) {
+$scope.user = $localStorage.user
+console.log($scope.user)
+})
+
+
+
 

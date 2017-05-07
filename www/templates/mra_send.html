@@ -33,7 +33,7 @@
    
     
     <div class="list inset" ng-show="searchstatushn=='success'">
-     <a class="item  item-icon-right" href="#">
+     <a class="item  item-icon-right" href="#mra_add/{{patient.hn}}/1">
     
   HN : {{patient.hn}} ชื่อ- นามสกุล : {{patient.patientname}}
     <i class="icon ion-edit"></i>
@@ -43,7 +43,7 @@
     </div>
 
      <div class="list inset" ng-show="searchstatusan=='success'">
-     <a class="item  item-icon-right" href="#">
+     <a class="item  item-icon-right"  href="#mra_add/{{ipt.hn}}/{{ipt.an}}">
     
   AN : {{ipt.an}}    HN : {{ipt.hn}}      ชื่อ - นามสกุล : {{ipt.patientname}}
     <i class="icon ion-edit"></i>

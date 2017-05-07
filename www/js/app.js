@@ -43,7 +43,11 @@ angular.module('starter', ['ionic','ngStorage'])
            templateUrl: 'templates/mra_send.html',
            controller: 'mraSendCtrl',
        })
-      
+       .state('mra_add', {
+           url: '/mra_add/:hn/:an',
+           templateUrl: 'templates/mra_add.html',
+           controller: 'mraAddCtrl',
+       })
 
 
            $urlRouterProvider.otherwise('/home');
