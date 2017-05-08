@@ -41,6 +41,19 @@ angular.module('starter')
         return promise;
     };
 
+     this.savehn = function(data) {
+
+        var formdata = data;
+        console.log(formdata)
+        var promise = $http({
+            method: 'POST',
+            url: 'http://118.175.76.244/mr_api/savehn.php',
+            data: formdata
+
+        });
+        return promise;
+    };
+
 
 
 

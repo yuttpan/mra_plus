@@ -50,9 +50,23 @@ $scope.data = {} ;
 })
 
 
-.controller('mraAddCtrl', function($scope, $state,DataService,$ionicPopup,$window,$localStorage) {
+.controller('mraAddhnCtrl', function($scope, $state,$stateParams,DataService,$ionicPopup,$window,$localStorage) {
 $scope.user = $localStorage.user
 console.log($scope.user)
+
+$scope.data = {
+    hn : $stateParams.hn,
+    p_in : $localStorage.user.name
+}
+
+$scope.savehn = function(){
+    $scope.savestatushn = 'error'
+ DataService.savehn($scope.data).success(function ($data) {
+			var getdata = angular.extend($data);
+})
+}
+
+console.log($scope.data)
 })
 
 

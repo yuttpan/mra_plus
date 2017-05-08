@@ -43,10 +43,10 @@ angular.module('starter', ['ionic','ngStorage'])
            templateUrl: 'templates/mra_send.html',
            controller: 'mraSendCtrl',
        })
-       .state('mra_add', {
-           url: '/mra_add/:hn/:an',
-           templateUrl: 'templates/mra_add.html',
-           controller: 'mraAddCtrl',
+       .state('mra_addhn', {
+           url: '/mra_addhn/:hn',
+           templateUrl: 'templates/mra_addhn.html',
+           controller: 'mraAddhnCtrl',
        })
 
 
